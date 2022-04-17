@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(232, 245, 223);
+}
+
+header{
+    background-color: salmon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+
+
+ #nav{
+     display: flex;
+     list-style: none;
+     justify-content: flex-start;
+ }
+
+ #nav > *{
+     padding: 5px;
+ }
+
+ #origin{
+     display: flex;
+ }
+ img {
+     float: right;
+     width: 45%;
+     object-fit: cover;
+ }
+
+

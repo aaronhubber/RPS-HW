@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+{% block content %}
+    <div>
+        <h2>Here declare your name and most brutal of weapons:</h3>   
+        <form  action="/game" method="post">
+            Your Name
+            <input type="text" name="name1" id="name1" required>
+            <select name="weapon1" required>
+                <option selected>Choose your weapon</option>
+                <option value="rock">Rock</option>
+                <option value="scissors">Scissors</option>
+                <option value="paper">Paper</option>
+            </select>
+        
+            Their Name
+            <input type="text" name="name2" id="name2" required>
+            <select name="weapon2" required>
+                <option selected>Choose your weapon</option>
+                <option value="rock">Rock</option>
+                <option value="scissors">Scissors</option>
+                <option value="paper">Paper</option>
+            </select>
+            <button type="submit" >Battle!</button>
+        </form>
+    </div>
+    <h1>{{result}}</h1>
+<body>
+{% endblock %}
